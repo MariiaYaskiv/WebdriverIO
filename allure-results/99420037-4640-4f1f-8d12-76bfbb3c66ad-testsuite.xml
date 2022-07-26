@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759489514' stop='1658759530386'>
+    <name>Verify if an element is selected </name>
+    <title>Verify if an element is selected </title>
+    <test-cases>
+        <test-case start='1658759489514' status='passed' stop='1658759530384'>
+            <name>Get content from table cell</name>
+            <title>Get content from table cell</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-20'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-20'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4a9c965d-122d-4d75-90a7-d067b22d7911-attachment.png' type='image/png' size='76365'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759337499' stop='1658759345065'>
+    <name>Verify if a user can put numbers and if the input has a focus</name>
+    <title>Verify if a user can put numbers and if the input has a focus</title>
+    <test-cases>
+        <test-case start='1658759337500' status='passed' stop='1658759345063'>
+            <name>Verify if a user can put numbers and if the input has a focus</name>
+            <title>Verify if a user can put numbers and if the input has a focus</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='cc39f405-aa21-4374-9b15-f2d6f319f68f-attachment.png' type='image/png' size='20724'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759447693' stop='1658759457921'>
+    <name>Opening new window</name>
+    <title>Opening new window</title>
+    <test-cases>
+        <test-case start='1658759447695' status='passed' stop='1658759457919'>
+            <name>Verify if the user can open a new window </name>
+            <title>Verify if the user can open a new window </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-17'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-17'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='20d9577e-a643-4a34-88ce-cfc6a241264f-attachment.png' type='image/png' size='23137'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

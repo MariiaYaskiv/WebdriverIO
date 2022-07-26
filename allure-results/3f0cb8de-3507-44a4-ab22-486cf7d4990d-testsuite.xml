@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759423381' stop='1658759435315'>
+    <name>Verify if a user can registrate</name>
+    <title>Verify if a user can registrate</title>
+    <test-cases>
+        <test-case start='1658759423382' status='passed' stop='1658759435314'>
+            <name>Verify if a user can enter his username and password</name>
+            <title>Verify if a user can enter his username and password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-15'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-15'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5b9352e0-e8d7-44e9-a879-f88f9c9b6617-attachment.png' type='image/png' size='55891'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

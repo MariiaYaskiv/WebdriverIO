@@ -1,3 +1,4 @@
+import AllureReporter from '@wdio/allure-reporter';
 import type { Options } from '@wdio/types'
 
 
@@ -52,7 +53,7 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.ts'
+        './test/specs/**/notificationMessageRendered+.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -141,7 +142,7 @@ export const config: Options.Testrunner = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver', 'electron', 'firefox-profile'],
+    services: ['chromedriver'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -163,9 +164,16 @@ export const config: Options.Testrunner = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    // reporters: ['spec'],
 
-
+    reporters:
+        ['spec',
+            ['allure', {
+                outputDir: 'allure-results',
+                disableWebdriverStepsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
+            }],
+        ],
 
     //
     // Options to be passed to Mocha.
@@ -233,34 +241,34 @@ export const config: Options.Testrunner = {
      * @param {String} commandName hook command name
      * @param {Array} args arguments that command would receive
      */
-   /* beforeCommand: function (capabilities, specs) {
-        browser.addCommand(
-            "custumFileUpload",
-            async (path, uploadBoxSelectors, submitUploadSelectors) => {
-                const remoteFilePath = await browser.uploadFile(path)
-                await $(uploadBoxSelectors).setValue(remoteFilePath)
-                await await $(submitUploadSelectors).click()
-            })
-        browser.addCommand(
-            'getTitleAnaUrl', async () => {
-                return {
-                    title: await browser.getTitle(),
-                    url: await browser.getUrl(),
-                }
-            })
-            browser.addCommand('waitAndClick', async (selector) => {
-                await (await $(selector)).waitForDisplayed()
-                await (await $(selector)).click()
-
-            })
-            browser.overwriteCommand('pause', async (origPauseFunction, ms) => {
-                console.log('Sleeping for' + ms)
-                await origPauseFunction(ms)
-                return ms
-            } )
-
-
-    },*/
+    /* beforeCommand: function (capabilities, specs) {
+         browser.addCommand(
+             "custumFileUpload",
+             async (path, uploadBoxSelectors, submitUploadSelectors) => {
+                 const remoteFilePath = await browser.uploadFile(path)
+                 await $(uploadBoxSelectors).setValue(remoteFilePath)
+                 await await $(submitUploadSelectors).click()
+             })
+         browser.addCommand(
+             'getTitleAnaUrl', async () => {
+                 return {
+                     title: await browser.getTitle(),
+                     url: await browser.getUrl(),
+                 }
+             })
+             browser.addCommand('waitAndClick', async (selector) => {
+                 await (await $(selector)).waitForDisplayed()
+                 await (await $(selector)).click()
+ 
+             })
+             browser.overwriteCommand('pause', async (origPauseFunction, ms) => {
+                 console.log('Sleeping for' + ms)
+                 await origPauseFunction(ms)
+                 return ms
+             } )
+ 
+ 
+     },*/
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
@@ -294,8 +302,19 @@ export const config: Options.Testrunner = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
+
+
+    afterTest: async function (test,
+        context,
+        { error, result, duration, passed, retries }) {
+        if (passed) {
+            await browser.takeScreenshot();
+        }
+        else if (error) {
+            let screen = await browser.takeScreenshot();
+            await AllureReporter.addAttachment('Myscreenshot', Buffer.from(screen, 'base64'), 'image/png')
+        }
+    },
 
 
     /**

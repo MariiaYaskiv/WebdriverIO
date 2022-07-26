@@ -1,16 +1,16 @@
-import InfiniteScroll from '../pageObjects/InfiniteScrollPage';
+import InfiniteScroll from '../pageObjects/InfiniteScrollPage-';
 
 
 
 const infiniteScroll = new InfiniteScroll();
 
-describe('Verify if an element is selected (CheckBox)', function () {
-    beforeEach(async function () {
+describe('Verify if a user can scroll down', function () {
+    before(async function () {
         infiniteScroll.open();
 
     });
-    it('JavaScript Alerts ', async () => {
-        infiniteScroll.scrollClick()
+    it.skip('Verify if a user can scrool down', async () => {
+        await infiniteScroll.scrollClick()
         await browser.pause(5000);
 
 

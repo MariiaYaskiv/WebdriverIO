@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759211667' stop='1658759217224'>
+    <name>Download file</name>
+    <title>Download file</title>
+    <test-cases>
+        <test-case start='1658759211668' status='passed' stop='1658759217223'>
+            <name>Verify if the user can download file from web-site</name>
+            <title>Verify if the user can download file from web-site</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1e2d4624-491d-46b3-9541-31810b55e0a9-attachment.png' type='image/png' size='73650'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

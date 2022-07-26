@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658759462643' stop='1658759470439'>
+    <name>Redirect link</name>
+    <title>Redirect link</title>
+    <test-cases>
+        <test-case start='1658759462644' status='passed' stop='1658759470438'>
+            <name>Verify if the user can click on the link and he get Redirect link</name>
+            <title>Verify if the user can click on the link and he get Redirect link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-18'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-18'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='13b344ef-037b-4ac9-ace1-4357af5eceba-attachment.png' type='image/png' size='37227'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
