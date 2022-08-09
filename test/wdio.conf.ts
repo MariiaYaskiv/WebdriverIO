@@ -4,6 +4,7 @@ import type { Options } from '@wdio/types'
 
 
 export const config: Options.Testrunner = {
+    
     //
     // ====================
     // Runner Configuration
@@ -53,7 +54,7 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/notificationMessageRendered+.ts'
+        './test/specs/**/*.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -151,6 +152,9 @@ export const config: Options.Testrunner = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
+    /*before () {
+        require('expect-webdriverio').setOptions({ wait: 5000 })
+    },*/
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -170,17 +174,21 @@ export const config: Options.Testrunner = {
         ['spec',
             ['allure', {
                 outputDir: 'allure-results',
+                addConsoleLogs: true,
                 disableWebdriverStepsReporting: true,
-                disableWebdriverScreenshotsReporting: false,
+                disableWebdriverScreenshotsReporting: true,
+                disableMochaHooks: false,
+            
             }],
         ],
+
 
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000 * 10
     },
     //
     // =====
@@ -241,34 +249,8 @@ export const config: Options.Testrunner = {
      * @param {String} commandName hook command name
      * @param {Array} args arguments that command would receive
      */
-    /* beforeCommand: function (capabilities, specs) {
-         browser.addCommand(
-             "custumFileUpload",
-             async (path, uploadBoxSelectors, submitUploadSelectors) => {
-                 const remoteFilePath = await browser.uploadFile(path)
-                 await $(uploadBoxSelectors).setValue(remoteFilePath)
-                 await await $(submitUploadSelectors).click()
-             })
-         browser.addCommand(
-             'getTitleAnaUrl', async () => {
-                 return {
-                     title: await browser.getTitle(),
-                     url: await browser.getUrl(),
-                 }
-             })
-             browser.addCommand('waitAndClick', async (selector) => {
-                 await (await $(selector)).waitForDisplayed()
-                 await (await $(selector)).click()
- 
-             })
-             browser.overwriteCommand('pause', async (origPauseFunction, ms) => {
-                 console.log('Sleeping for' + ms)
-                 await origPauseFunction(ms)
-                 return ms
-             } )
- 
- 
-     },*/
+   /*  beforeCommand: function (capabilities, specs) {
+       
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
@@ -304,17 +286,19 @@ export const config: Options.Testrunner = {
      */
 
 
-    afterTest: async function (test,
+   /* afterTest: async function (test,
         context,
         { error, result, duration, passed, retries }) {
         if (passed) {
             await browser.takeScreenshot();
+            
         }
         else if (error) {
             let screen = await browser.takeScreenshot();
-            await AllureReporter.addAttachment('Myscreenshot', Buffer.from(screen, 'base64'), 'image/png')
+            AllureReporter.addAttachment('Myscreenshot', Buffer.from(screen, 'base64'), 'image/png')
+           
         }
-    },
+    },*/
 
 
     /**
@@ -359,6 +343,7 @@ export const config: Options.Testrunner = {
      */
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
+ 
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

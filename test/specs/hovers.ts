@@ -11,16 +11,12 @@ describe(" Hovers ", function () {
     it(" Should be hover over users profile ", async function () {
 
         await hovers.moveToElementFirst();
-        // await expect(hovers.getTextFirst(`1name: user1\nView profile`))//.equals(`name: user1\nView profile`);
-        await browser.pause(5000)
-
         await hovers.moveToElementSecond();
         // await expect(hovers.getTextSecond()).equals(`name: user2\nView profile`);
-        await browser.pause(5000)
-
-        await hovers.moveToElementThirt();
+        await hovers.moveToElementThird();
+        await hovers.getTextThird(/*'name: user3'*/)
         // await expect(hovers.getTextThirt()).equals(`name: user3\nView profile`);
-        await browser.pause(5000)
+        await hovers.clickOnTheLinkOne('https://the-internet.herokuapp.com/users/3')
 
     });
 

@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660020776676' stop='1660020780960'>
+    <name> Hovers </name>
+    <title> Hovers </title>
+    <test-cases>
+        <test-case start='1660020776676' status='passed' stop='1660020780953'>
+            <name> Should be hover over users profile </name>
+            <title> Should be hover over users profile </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660020776678' status='passed' stop='1660020776679'>
+                    <name>Verify if the user can scroll to the image and image will be hover</name>
+                    <title>Verify if the user can scroll to the image and image will be hover</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660020779715' status='passed' stop='1660020779720'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can move the mouse to the first element.
+                             Expected result: Check if the user can move the mouse to the first element.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can move the mouse to the first element.
+                             Expected result: Check if the user can move the mouse to the first element.</title>
+                    <attachments>
+                        <attachment title='Step 1Verify if the user can move the mouse to the first element' source='fd434169-8f37-40c1-90c9-404fd3ca78cd-attachment.png' type='image/png' size='29482'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020779943' status='passed' stop='1660020779946'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can move the mouse to the second element.
+                             Expected result: Check if the user can move the mouse to the second element.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can move the mouse to the second element.
+                             Expected result: Check if the user can move the mouse to the second element.</title>
+                    <attachments>
+                        <attachment title='Step 2Verify if the user can move the mouse to the second element' source='37834ce4-c4a3-45dd-b452-45bf488e7c9f-attachment.png' type='image/png' size='29559'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020780241' status='passed' stop='1660020780246'>
+                    <name>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can move the mouse to the third element.
+                             Expected result: Check if the user can move the mouse to the third element.</name>
+                    <title>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can move the mouse to the third element.
+                             Expected result: Check if the user can move the mouse to the third element.</title>
+                    <attachments>
+                        <attachment title='Step 3Verify if the user can move the mouse to the third element' source='19ef6200-601a-4c3d-a874-3de03708923a-attachment.png' type='image/png' size='29592'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020780487' status='passed' stop='1660020780489'>
+                    <name>
+                             STEP 4 STARTED.
+                             Description: Verify if it is text displayed when the user move the mouse under the third image.
+                             Expected result: Check if it is text displayed when the user move the mouse under the third image.</name>
+                    <title>
+                             STEP 4 STARTED.
+                             Description: Verify if it is text displayed when the user move the mouse under the third image.
+                             Expected result: Check if it is text displayed when the user move the mouse under the third image.</title>
+                    <attachments>
+                        <attachment title='Step 4Verify if it is text displayed when the user move the mouse under the third image' source='d67467e2-31c1-4078-b656-d989ef39a88f-attachment.png' type='image/png' size='29592'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020780947' status='passed' stop='1660020780949'>
+                    <name>
+                             STEP 5 STARTED.
+                             Description: Verify if the third image is clickable and go to another page.
+                             Expected result: Check if the third image is clickable and go to another page.</name>
+                    <title>
+                             STEP 5 STARTED.
+                             Description: Verify if the third image is clickable and go to another page.
+                             Expected result: Check if the third image is clickable and go to another page.</title>
+                    <attachments>
+                        <attachment title='Step 5Verify if the third image is clickable and go to another page' source='d5e01939-7c8e-4d68-a7be-67eb258cc6f5-attachment.png' type='image/png' size='7660'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='9fe4a559-ab83-44df-bc98-5e0d1269e6f8-attachment.html' type='text/html' size='1570'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

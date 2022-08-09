@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660021171885' stop='1660021176181'>
+    <name>Dropdown</name>
+    <title>Dropdown</title>
+    <test-cases>
+        <test-case start='1660021171886' status='passed' stop='1660021174936'>
+            <name>Verify if a user can click on Dropdown and choose the option First way </name>
+            <title>Verify if a user can click on Dropdown and choose the option First way </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660021171889' status='passed' stop='1660021171889'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660021174729' status='passed' stop='1660021174735'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Click on the second option .
+                             Expected result: The second option should be clicked.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Click on the second option .
+                             Expected result: The second option should be clicked.</title>
+                    <attachments>
+                        <attachment title='Step 1Click on the second option ' source='b3103bdb-7d9f-44f4-b3af-7f66230ff2bd-attachment.png' type='image/png' size='21271'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='8ca038b3-e044-419b-8aaf-6d6400b63fbb-attachment.html' type='text/html' size='512'/>
+            </attachments>
+        </test-case>
+        <test-case start='1660021174937' status='passed' stop='1660021176179'>
+            <name>Verify if a user can click on Dropdown and choose the option Second way</name>
+            <title>Verify if a user can click on Dropdown and choose the option Second way</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660021174937' status='passed' stop='1660021174937'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660021175962' status='passed' stop='1660021175965'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Click on the first option .
+                             Expected result: The first option should be clicked.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Click on the first option .
+                             Expected result: The first option should be clicked.</title>
+                    <attachments>
+                        <attachment title='Step 2Click on the first option ' source='2eedb62e-2776-4ea3-bcfd-15e3f78ac40f-attachment.png' type='image/png' size='21221'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='52d31483-a172-4b1a-b128-b5cc71fe3577-attachment.html' type='text/html' size='509'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

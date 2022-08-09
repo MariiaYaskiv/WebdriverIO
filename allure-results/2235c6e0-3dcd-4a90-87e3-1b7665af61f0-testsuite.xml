@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660022235076' stop='1660022238290'>
+    <name>Notification message rendered</name>
+    <title>Notification message rendered</title>
+    <test-cases>
+        <test-case start='1660022235077' status='passed' stop='1660022238288'>
+            <name>Verify what message a user can get from the page, test comparing</name>
+            <title>Verify what message a user can get from the page, test comparing</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-16'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-16'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660022235078' status='passed' stop='1660022235079'>
+                    <name>Verify if the user can click on the button and receive the comparing massage</name>
+                    <title>Verify if the user can click on the button and receive the comparing massage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660022238007' status='passed' stop='1660022238013'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can click on the button.
+                             Expected result: Check if the user can click on the button.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can click on the button.
+                             Expected result: Check if the user can click on the button.</title>
+                    <attachments>
+                        <attachment title='Step 1Verify if the user can click on the button' source='26c2d3f3-2418-4dae-a019-8097708745ff-attachment.png' type='image/png' size='38677'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660022238283' status='passed' stop='1660022238285'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can get the comparing massage .
+                             Expected result: Check if the user can get the comparing massage.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can get the comparing massage .
+                             Expected result: Check if the user can get the comparing massage.</title>
+                    <attachments>
+                        <attachment title='Step 2Verify if the user can get the comparing massage ' source='f2fc50bf-87ec-4582-8ff2-c1aaddf7e2d8-attachment.png' type='image/png' size='38677'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='e5c06b26-0efc-40ff-b53d-d4c3e4322581-attachment.html' type='text/html' size='628'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

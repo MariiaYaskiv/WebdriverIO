@@ -1,0 +1,136 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660022209634' stop='1660022213880'>
+    <name>JavaScript Alerts</name>
+    <title>JavaScript Alerts</title>
+    <test-cases>
+        <test-case start='1660022209635' status='passed' stop='1660022212160'>
+            <name>Verify if a user can get alerts from the page, JavaScript Alerts </name>
+            <title>Verify if a user can get alerts from the page, JavaScript Alerts </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660022209641' status='passed' stop='1660022209642'>
+                    <name>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</name>
+                    <title>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660022212150' status='passed' stop='1660022212157'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can click on the button and receive the alert and confirm it.
+                             Expected result: Check if the user can click on the button and receive the alert and confirm it.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Verify if the user can click on the button and receive the alert and confirm it.
+                             Expected result: Check if the user can click on the button and receive the alert and confirm it.</title>
+                    <attachments>
+                        <attachment title='Step 1Verify if the user can click on the button and receive the alert and confirm it' source='86b2e477-8eaa-4856-ad59-97534c534789-attachment.png' type='image/png' size='34158'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='fa7eb535-7d46-498e-a27b-39f7c92edeea-attachment.html' type='text/html' size='527'/>
+            </attachments>
+        </test-case>
+        <test-case start='1660022212161' status='passed' stop='1660022212929'>
+            <name>Verify if a user can get alerts from the page, JavaScript Alerts Second</name>
+            <title>Verify if a user can get alerts from the page, JavaScript Alerts Second</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660022212162' status='passed' stop='1660022212162'>
+                    <name>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</name>
+                    <title>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660022212923' status='passed' stop='1660022212924'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can click on the button and receive the confirm alert and confirm it.
+                             Expected result: Check if the user can click on the button and receive the confirm alert and confirm it.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can click on the button and receive the confirm alert and confirm it.
+                             Expected result: Check if the user can click on the button and receive the confirm alert and confirm it.</title>
+                    <attachments>
+                        <attachment title='Step 2Verify if the user can click on the button and receive the confirm alert and confirm it' source='6d1ef000-6cf9-4dd9-b3ff-8a7ab372405c-attachment.png' type='image/png' size='33394'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='12ab98e7-74b0-4866-a866-34b7e2af9d9a-attachment.html' type='text/html' size='550'/>
+            </attachments>
+        </test-case>
+        <test-case start='1660022212930' status='passed' stop='1660022213879'>
+            <name>Verify if a user can get alerts from the page, JavaScript Alerts Third</name>
+            <title>Verify if a user can get alerts from the page, JavaScript Alerts Third</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-13'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660022212931' status='passed' stop='1660022212931'>
+                    <name>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</name>
+                    <title>Verify if the user can click on the alert,
+                             prompt and  if they can enter the text on the input confirm and confirm it</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660022213874' status='passed' stop='1660022213876'>
+                    <name>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can click on the button and receive the prompt, enter the text and confirm it.
+                             Expected result: Check if the user can click on the button and receive the prompt, enter the text and confirm it.</name>
+                    <title>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can click on the button and receive the prompt, enter the text and confirm it.
+                             Expected result: Check if the user can click on the button and receive the prompt, enter the text and confirm it.</title>
+                    <attachments>
+                        <attachment title='Step 3Verify if the user can click on the button and receive the prompt, enter the text and confirm it' source='86168af0-84dc-435e-8d93-7f2da7b6c5f5-attachment.png' type='image/png' size='33467'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='c372f36e-8598-41c1-8470-99b5059e1338-attachment.html' type='text/html' size='581'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

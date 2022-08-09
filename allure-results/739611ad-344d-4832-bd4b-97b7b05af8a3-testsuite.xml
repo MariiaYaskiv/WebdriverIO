@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660022226063' stop='1660022230303'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1660022226065' status='passed' stop='1660022230301'>
+            <name>Verify if a user can enter his username and password</name>
+            <title>Verify if a user can enter his username and password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-15'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-15'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660022226068' status='passed' stop='1660022226069'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660022228592' status='passed' stop='1660022228597'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Verify if the login page exist, if there is expected text.
+                             Expected result: Check if the login page exist, if there is expected text.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Verify if the login page exist, if there is expected text.
+                             Expected result: Check if the login page exist, if there is expected text.</title>
+                    <attachments>
+                        <attachment title='Step 1Verify if the login page exist, if there is expected text' source='94e0dd5d-0b03-456b-8262-5bf6c3f2cb6d-attachment.png' type='image/png' size='53044'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660022228997' status='passed' stop='1660022228999'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can enter their name in the input.
+                             Expected result: Check if the user can enter their name in the input.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Verify if the user can enter their name in the input.
+                             Expected result: Check if the user can enter their name in the input.</title>
+                    <attachments>
+                        <attachment title='Step 2Verify if the user can enter their name in the input' source='f8f1d84e-24e3-466d-9ef1-f46b0b1564b3-attachment.png' type='image/png' size='54360'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660022229360' status='passed' stop='1660022229365'>
+                    <name>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can enter their password in the input.
+                             Expected result: Check if the user can enter their password in the input.</name>
+                    <title>
+                             STEP 3 STARTED.
+                             Description: Verify if the user can enter their password in the input.
+                             Expected result: Check if the user can enter their password in the input.</title>
+                    <attachments>
+                        <attachment title='Step 3Verify if the user can enter their password in the input' source='a71dc5a7-9186-4e65-8c48-942a8998f61f-attachment.png' type='image/png' size='54560'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660022230056' status='passed' stop='1660022230060'>
+                    <name>
+                             STEP 4 STARTED.
+                             Description: Verify if the user can click on the button to confirm their credentials.
+                             Expected result: Check if the user can click on the button to confirm their credentials.</name>
+                    <title>
+                             STEP 4 STARTED.
+                             Description: Verify if the user can click on the button to confirm their credentials.
+                             Expected result: Check if the user can click on the button to confirm their credentials.</title>
+                    <attachments>
+                        <attachment title='Step 4Verify if the user can click on the button to confirm their credentials' source='7813f221-da3f-4333-82b7-af4f879abdf7-attachment.png' type='image/png' size='55867'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660022230296' status='passed' stop='1660022230298'>
+                    <name>
+                             STEP 5 STARTED.
+                             Description: Verify if the user receive the error message when they entered wrong credentials.
+                             Expected result: Check if the user receive the error message when they entered wrong credentials.</name>
+                    <title>
+                             STEP 5 STARTED.
+                             Description: Verify if the user receive the error message when they entered wrong credentials.
+                             Expected result: Check if the user receive the error message when they entered wrong credentials.</title>
+                    <attachments>
+                        <attachment title='Step 5Verify if the user receive the error message when they entered wrong credentials' source='d84cd449-ddca-44ac-8970-48434566878f-attachment.png' type='image/png' size='55867'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='852e5011-8c5b-45fc-8d54-a36f9c74fb44-attachment.html' type='text/html' size='1506'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

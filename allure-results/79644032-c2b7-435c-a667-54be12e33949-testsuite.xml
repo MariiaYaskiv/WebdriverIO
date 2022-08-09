@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660020714193' stop='1660020737206'>
+    <name>Dropdown</name>
+    <title>Dropdown</title>
+    <test-cases>
+        <test-case start='1660020714193' status='broken' stop='1660020736563'>
+            <name>Verify if a user can click on Dropdown and choose the option First way </name>
+            <title>Verify if a user can click on Dropdown and choose the option First way </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-5'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660020714196' status='passed' stop='1660020714196'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Can't call selectByVisibleText on element with selector "#dropdown" because element wasn't found</message>
+                <stack-trace>Error: Can't call selectByVisibleText on element with selector "#dropdown" because element wasn't found
+                    at implicitWait (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\test\pageObjects\dropdownPage+++.ts:30:17
+                    at async start (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\helpers\helper.ts:23:10)
+                    at async step (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\helpers\helper.ts:38:13)
+                    at async Dropdown.dropdownOneClick (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\test\pageObjects\dropdownPage+++.ts:22:9)
+                    at async Context.&lt;anonymous> (C:\Users\Mari4ka\Desktop\нове вебдрайверіо\WebdriverIO\test\specs\dropdown+++.ts:14:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660020736563' status='passed' stop='1660020737201'>
+            <name>Verify if a user can click on Dropdown and choose the option Second way</name>
+            <title>Verify if a user can click on Dropdown and choose the option Second way</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-5'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660020736564' status='passed' stop='1660020736564'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660020737192' status='passed' stop='1660020737197'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Click on the first option .
+                             Expected result: The first option should be clicked.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Click on the first option .
+                             Expected result: The first option should be clicked.</title>
+                    <attachments>
+                        <attachment title='Step 2Click on the first option ' source='9378e67d-7173-4e84-ba8d-9cb2c9a0ca25-attachment.png' type='image/png' size='21221'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='d50f3970-db7d-4f71-a5b0-9bfeaac2ff62-attachment.html' type='text/html' size='388'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

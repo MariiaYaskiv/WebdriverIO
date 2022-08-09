@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660020690945' stop='1660020694073'>
+    <name>CheckBox</name>
+    <title>CheckBox</title>
+    <test-cases>
+        <test-case start='1660020690946' status='passed' stop='1660020694071'>
+            <name>Should click on checkbox 2. Verify if an element is selected </name>
+            <title>Should click on checkbox 2. Verify if an element is selected </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.80'/>
+            </parameters>
+            <steps>
+                <step start='1660020690950' status='passed' stop='1660020690950'>
+                    <name>Verify if the user can click on the needed checkbox</name>
+                    <title>Verify if the user can click on the needed checkbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660020693562' status='passed' stop='1660020693569'>
+                    <name>
+                             STEP 1 STARTED.
+                             Description: Verify if the second checkbox is choosed and displayed.
+                             Expected result: The second checkbox should be choosed and displayed.</name>
+                    <title>
+                             STEP 1 STARTED.
+                             Description: Verify if the second checkbox is choosed and displayed.
+                             Expected result: The second checkbox should be choosed and displayed.</title>
+                    <attachments>
+                        <attachment title='Step 1Verify if the second checkbox is choosed and displayed' source='b55f284e-51f7-4b1b-bcee-c1ccf7475434-attachment.png' type='image/png' size='23526'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020693857' status='passed' stop='1660020693861'>
+                    <name>
+                             STEP 2 STARTED.
+                             Description: Click on the first checkbox .
+                             Expected result: The first checkbox should be clicked.</name>
+                    <title>
+                             STEP 2 STARTED.
+                             Description: Click on the first checkbox .
+                             Expected result: The first checkbox should be clicked.</title>
+                    <attachments>
+                        <attachment title='Step 2Click on the first checkbox ' source='726c5ce8-9a8d-46ec-88b2-a9849740930f-attachment.png' type='image/png' size='23647'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660020694065' status='passed' stop='1660020694068'>
+                    <name>
+                             STEP 3 STARTED.
+                             Description: Verify if the first checkbox is choosed and displayed.
+                             Expected result: The first checkbox should be choosed and displayed.</name>
+                    <title>
+                             STEP 3 STARTED.
+                             Description: Verify if the first checkbox is choosed and displayed.
+                             Expected result: The first checkbox should be choosed and displayed.</title>
+                    <attachments>
+                        <attachment title='Step 3Verify if the first checkbox is choosed and displayed' source='ba3954b0-bfaa-4eb3-a7f4-c0a77a4f0bb1-attachment.png' type='image/png' size='23647'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Console Logs' source='e9cacdaa-4581-4575-93f3-9f9f95476743-attachment.html' type='text/html' size='875'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
