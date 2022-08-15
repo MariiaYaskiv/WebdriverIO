@@ -286,7 +286,7 @@ export const config: Options.Testrunner = {
      */
 
 
-   /* afterTest: async function (test,
+    /*afterTest: async function (test,
         context,
         { error, result, duration, passed, retries }) {
         if (passed) {
@@ -343,7 +343,26 @@ export const config: Options.Testrunner = {
      */
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
- 
+    /*onComplete: function(exitCode, config, capabilities, results) {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results', '--clean'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                5000)
+
+            generation.on('exit', function(exitCode: number | unknown) {
+                clearTimeout(generationTimeout)
+
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
+
+                console.log('Allure report successfully generated')
+                resolve(1)
+            })
+        })
+    },*/
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

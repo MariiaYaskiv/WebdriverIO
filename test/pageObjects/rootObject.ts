@@ -1,11 +1,9 @@
 export default class RootObject {
-    constructor() {
-
+  constructor() {}
+  open(path?: string): void {
+    if (path) {
+      browser.url(path);
     }
-    open(path?: string): void {
-        if (path) {
-            browser.url(path);
-        }
-        browser.url('')
-    }
+    browser.url("");
+  }
 }

@@ -1,27 +1,22 @@
-import RootObject from './rootObject';
+import RootObject from "./rootObject";
 //import { expect } from 'chai';
 
-
 export default class InfiniteScroll extends RootObject {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    public open() {
-        return super.open('/infinite_scroll');
-    }
+  public open() {
+    return super.open("/infinite_scroll");
+  }
 
+  async scroll(): Promise<WebdriverIO.Element> {
+    return await $("#page-footer");
+  }
 
-    async scroll(): Promise<WebdriverIO.Element> {
-        return await $("#page-footer")
-    }
-
-    async scrollClick(): Promise<void> {
-        // await (await this.scroll()).moveTo()
-        console.log(scroll(1000, 10000))
-        browser.pause(20000)
-
-    };
-
-
-} 
+  async scrollClick(): Promise<void> {
+    // await (await this.scroll()).moveTo()
+    console.log(scroll(1000, 10000));
+    browser.pause(20000);
+  }
+}
