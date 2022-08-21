@@ -21,10 +21,10 @@ export default class ContextMenu extends RootObject {
       async () => {
         const menu = await $("#hot-spot");
         await menu.click({ button: "right", skipRelease: true });
-        // await menu.waitForDisplayed();
-        // const myAlert = await browser.getAlertText();
-        browser.waitUntil(() => !browser.getAlertText());
-        await browser.acceptAlert();
+         await menu.waitForDisplayed();
+       //   await browser.getAlertText();
+      //  browser.waitUntil(() => !browser.getAlertText());
+       // await browser.acceptAlert();
         //assert.deepEqual(myAlert, 'You selected a context menu' )
       }
     );

@@ -25,7 +25,8 @@ export default class Checkbox extends RootObject {
       async () => {
         const click = await this.checkBoxOne();
         await click.click();
-        browser.waitUntil(() => !click.isDisplayed());
+        expect(await click.isDisplayed()).to.be.true;
+      browser.waitUntil(() => !click.isDisplayed());
       }
     );
   }
@@ -44,8 +45,9 @@ export default class Checkbox extends RootObject {
       "The second checkbox should be choosed and displayed",
       "The second checkbox is choosed and displayed",
       async () => {
-        expect(await element.isDisplayed()).to.be.true;
-        browser.waitUntil(() => !element.isDisplayed());
+        const checkboxTwo = await this.checkBoxTwo();
+        expect(await checkboxTwo.isDisplayed()).to.be.true;
+        browser.waitUntil(() => !checkboxTwo.isDisplayed());
       }
     );
   }
@@ -60,8 +62,9 @@ export default class Checkbox extends RootObject {
       "The first checkbox should be choosed and displayed",
       "The first checkbox is choosed and displayed",
       async () => {
-        expect(await element.isDisplayed()).to.be.true;
-        browser.waitUntil(() => !element.isDisplayed());
+        const click = await this.checkBoxOne();
+        expect(await click.isDisplayed()).to.be.true;
+        browser.waitUntil(() => !click.isDisplayed());
       }
     );
   }

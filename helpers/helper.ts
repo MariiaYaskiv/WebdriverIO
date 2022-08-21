@@ -9,7 +9,7 @@ export default class Steps {
     private static logFile: LogFile = {
         steps: []
     };
-    private static screenshotName = `./log/${ Math.floor((Math.random() * 50) + 1)}.json`;
+    private static screenshotName = `./log/${ Math.floor((Math.random() * 100) + 1)}.json`;
 
     private static createLogFile() {
         writeFile(
@@ -21,7 +21,7 @@ export default class Steps {
 
     private static screenshot: string;
     private static async takeTheScreenshot() {
-        const screenshotNumber = Math.floor(Math.random() * 50) + 1;
+        const screenshotNumber = Math.floor(Math.random() * 100) + 1;
         const screen = await browser.saveScreenshot(`./screenshot/${screenshotNumber}.png`);
         Steps.screenshot = Buffer.from(screen).toString('base64');
         return screen;
@@ -35,7 +35,7 @@ export default class Steps {
         description: string, expected: string, actual: string, assertion: Function,
 
     ): Promise < void > {
-        const screenshotNumber1 = Math.floor(Math.random() * 50) + 1;
+        const screenshotNumber1 = Math.floor(Math.random() * 100) + 1;
 
         global.numberOfTheStep ||= 1;
         const number = global.numberOfTheStep++
